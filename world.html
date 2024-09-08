@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment - News Website</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to shared CSS -->
+  <style>
+    main {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">World</a>
+      <a href="business.html">Business</a>
+      <a href="sports.html">Sports</a>
+      <a href="entertainment.html">Entertainment</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>World News</h1>
+
+    <section>
+      <h2>World Section</h2>
+
+      <article>
+        <h2>Global Climate Conference: Leaders Pledge Action</h2>
+        <img src="https://www.bing.com/images/search?q=Global+Climate+Conference%3a+Leaders+Pledge+Action&form=HDRSC3&first=1" alt="Climate Conference">
+        <p>At the global climate summit, world leaders committed to taking stronger action on climate change. The agreements made at the conference could...</p>
+        <div class="more-content">
+          <p>Many countries pledged to reduce carbon emissions significantly by 2030. There was a focus on developing green technologies and renewable energy sources to ensure a sustainable future. Although there was progress, some critics argue that the measures are still not enough to prevent catastrophic climate change.</p>
+          <p>Environmental activists were present to push for more ambitious goals, and the summit concluded with a renewed sense of urgency.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+
+      <article>
+        <h2>Political Unrest in Southeast Asia Continues</h2>
+        <img src="https://example.com/political-unrest.jpg" alt="Political Unrest">
+        <p>Political tensions remain high in parts of Southeast Asia as protests continue to erupt over government policies. Recent developments have seen...</p>
+        <div class="more-content">
+          <p>The protests have been fueled by dissatisfaction with leadership, economic hardship, and concerns over civil liberties. Governments in the region have responded with crackdowns, leading to rising international concern about human rights violations.</p>
+          <p>Despite efforts to mediate the situation, the unrest shows no signs of abating, and experts are watching closely to see how the region will navigate these turbulent times.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+
+      <article>
+        <h2>Breakthrough in Middle East Peace Talks</h2>
+        <img src="https://example.com/middle-east-peace.jpg" alt="Peace Talks">
+        <p>After years of negotiations, there has been a breakthrough in Middle East peace talks. Leaders from multiple nations have agreed on a framework for...</p>
+        <div class="more-content">
+          <p>The framework focuses on diplomatic solutions to long-standing conflicts, with provisions for economic cooperation and humanitarian aid. International observers are cautiously optimistic, but acknowledge the challenges that still lie ahead in maintaining lasting peace in the region.</p>
+          <p>This latest round of talks is being hailed as a historic step forward, although much remains to be done to ensure that peace becomes a reality.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 News Website</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(button) {
+      const moreContent = button.previousElementSibling;
+      if (moreContent.style.display === "none" || moreContent.style.display === "") {
+        moreContent.style.display = "block";
+        button.textContent = "Read Less";
+      } else {
+        moreContent.style.display = "none";
+        button.textContent = "Read More";
+      }
+    }
+  </script>
+</body>
+</html>

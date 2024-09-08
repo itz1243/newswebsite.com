@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Website</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://cdn.discordapp.com/attachments/891049537366536192/1271845931389681674/kr_motion_running.png?ex=66de6513&is=66dd1393&hm=6923f3ba44c3fad1b3b2b1911a3b03e5edbc2c06d90e1fac75618a3315195722&'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      color: #fff; /* Text color to ensure readability */
+    }
+
+    header {
+      background: linear-gradient(135deg, rgba(51, 51, 51, 0.8), rgba(0, 0, 0, 0.8)); /* Gradient background */
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 15px 25px;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ff5722; /* Vibrant hover color */
+      border-color: #ff5722;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for main content */
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    article {
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for articles */
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: #333; /* Ensures text is readable on lighter background */
+    }
+
+    article:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    article h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    article img {
+      width: 100%;
+      border-radius: 15px;
+      height: auto;
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    article img:hover {
+      transform: scale(1.05);
+    }
+
+    article p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    article a {
+      background-color: #ff5722; /* Vibrant button color */
+      color: #fff;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    article a:hover {
+      background-color: #e64a19;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent footer */
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      main {
+        padding: 20px;
+      }
+
+      article {
+        padding: 15px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="world.html">World</a>
+      <a href="business.html">Business</a>
+      <a href="sports.html">Sports</a>
+      <a href="entertainment.html">Entertainment</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Headline 1</h2>
+      <img src="https://cdn.discordapp.com/attachments/891049537366536192/1281331768397660292/IMG_20240906_004441.jpg?ex=66dea073&is=66dd4ef3&hm=8d6c3249ae7e6389d271bdcc908524d82f259dc4cdd908e7af31be636a3328cc&" alt="Headline 1 Image">
+      <p>A person named "Prateekpro" made this beautiful art and posted on GAMES OF VEB server. He is a very talented artist.</p>
+      <a href="article1.html">Read More</a>
+    </article>
+
+    <article>
+      <h2>Headline 2</h2>
+      <img src="https://cdn.discordapp.com/attachments/891049537366536192/1282285637239705611/IMG-20240908-WA0001.jpg?ex=66decd0f&is=66dd7b8f&hm=9d062c91b30e712f19941faeb22510b6720495130f1cd6e99dca773fb4071596&" alt="Headline 2 Image">
+      <p>A person named "lagemed domg" made this beautiful art and posted on GAMES OF VEB server. He is a very talented artist and also a god mod. Love you, dong!</p>
+      <a href="article2.html">Read More</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 News Website</p>
+  </footer>
+</body>
+</html>

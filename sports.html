@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment - News Website</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to shared CSS -->
+  <style>
+    main {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="world.html">World</a>
+      <a href="business.html">Business</a>
+      <a href="#">Sports</a>
+      <a href="entertainment.html">Entertainment</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sports News</h1>
+
+    <section>
+      <h2>Sports Section</h2>
+
+      <article>
+        <h2>Champions League Final: Epic Showdown</h2>
+        <img src="https://example.com/champions-league-final.jpg" alt="Champions League Final">
+        <p>The Champions League final brought soccer fans around the world to the edge of their seats as two powerhouse teams faced off in a nail-biting match...</p>
+        <div class="more-content">
+          <p>The game saw thrilling performances by both teams, with a last-minute goal securing the victory. Star players Lionel Messi and Cristiano Ronaldo dazzled the crowd with their skillful plays, while goalkeeper Alisson Becker made some incredible saves.</p>
+          <p>This year's final is being hailed as one of the greatest in the tournament’s history, and fans can’t wait to see what next season holds.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+
+      <article>
+        <h2>NBA Finals: Lakers Clinch the Title</h2>
+        <img src="https://example.com/nba-finals.jpg" alt="NBA Finals">
+        <p>The Los Angeles Lakers have claimed the NBA title in a historic final game. Led by LeBron James and Anthony Davis, the team overcame fierce competition...</p>
+        <div class="more-content">
+          <p>In what is being called one of the most exciting NBA finals in recent memory, the Lakers delivered a powerful performance, securing their 18th championship. LeBron James, who was named Finals MVP, expressed his gratitude to fans and dedicated the win to the late Kobe Bryant.</p>
+          <p>This marks yet another chapter in the Lakers' storied history, and the team is already looking ahead to next season.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+
+      <article>
+        <h2>Formula 1: Hamilton Secures Another Victory</h2>
+        <img src="https://example.com/formula1-hamilton.jpg" alt="Formula 1 Race">
+        <p>Lewis Hamilton continues to dominate the Formula 1 circuit, clinching yet another victory in the latest race of the season. The seven-time world champion...</p>
+        <div class="more-content">
+          <p>Hamilton’s strategic maneuvers and expert driving kept him ahead of the pack throughout the race. With this win, he further cements his legacy as one of the greatest drivers in the history of the sport. His team, Mercedes, celebrated the victory with enthusiasm, already planning for future races.</p>
+          <p>Hamilton's victory also brings him one step closer to setting the record for most Formula 1 race wins in history.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 News Website</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(button) {
+      const moreContent = button.previousElementSibling;
+      if (moreContent.style.display === "none" || moreContent.style.display === "") {
+        moreContent.style.display = "block";
+        button.textContent = "Read Less";
+      } else {
+        moreContent.style.display = "none";
+        button.textContent = "Read More";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment - News Website</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to shared CSS -->
+  <style>
+    main {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="world.html">World</a>
+      <a href="business.html">Business</a>
+      <a href="sports.html">Sports</a>
+      <a href="entertainment.html">Entertainment</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Entertainment News</h1>
+
+    <article>
+      <h2>New Movie "Galactic Odyssey" Breaks Box Office Records</h2>
+      <img src="https://example.com/galactic-odyssey.jpg" alt="Galactic Odyssey">
+      <p>The highly anticipated movie *Galactic Odyssey* has taken the world by storm, smashing box office records in its opening weekend...</p>
+      <div class="more-content">
+        <p>Directed by the visionary filmmaker Alex Nova, this sci-fi epic has captured audiences with its stunning visuals, gripping storyline, and unforgettable characters. With a star-studded cast, including Chris Pratt and Zoe Saldana, the movie continues to draw huge crowds.</p>
+        <p>Nova's previous work in the genre set high expectations, but *Galactic Odyssey* has exceeded them, making it one of the most talked-about films of the year.</p>
+      </div>
+      <a onclick="toggleReadMore(this)">Read More</a>
+    </article>
+
+    <article>
+      <h2>Music Sensation "Nova Beats" Drops New Album</h2>
+      <img src="https://example.com/nova-beats.jpg" alt="Nova Beats Album Cover">
+      <p>Nova Beats, the breakout electronic music artist of the year, has just released a new album titled *Infinite Vibes*...</p>
+      <div class="more-content">
+        <p>The album features collaborations with some of the biggest names in the music industry and is already climbing the charts. Nova Beats’ unique sound and innovative production have made this one of the most anticipated albums of the year.</p>
+        <p>Fans and critics alike have praised the album for its diversity, blending electronic beats with elements of jazz, hip-hop, and pop music.</p>
+      </div>
+      <a onclick="toggleReadMore(this)">Read More</a>
+    </article>
+
+    <article>
+      <h2>Behind the Scenes of the Hit TV Show "Mystery Mansion"</h2>
+      <img src="https://example.com/mystery-mansion.jpg" alt="Mystery Mansion">
+      <p>The creators of *Mystery Mansion* have shared an exclusive behind-the-scenes look at the making of the show...</p>
+      <div class="more-content">
+        <p>The team revealed how they used cutting-edge technology to bring the spooky mansion to life, and the cast shared their experiences working on the show’s intense scenes.</p>
+        <p>The show's blend of mystery, drama, and supernatural elements has made it a massive hit, and fans are eagerly awaiting the next season.</p>
+      </div>
+      <a onclick="toggleReadMore(this)">Read More</a>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 News Website</p>
+  </footer>
+  
+
+  <script>
+    function toggleReadMore(button) {
+      const moreContent = button.previousElementSibling;
+      if (moreContent.style.display === "none" || moreContent.style.display === "") {
+        moreContent.style.display = "block";
+        button.textContent = "Read Less";
+      } else {
+        moreContent.style.display = "none";
+        button.textContent = "Read More";
+      }
+    }
+    
+  </script>
+</body>
+</html>

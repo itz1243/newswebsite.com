@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment - News Website</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to shared CSS -->
+  <style>
+    main {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="world.html">World</a>
+      <a href="#">Business</a>
+      <a href="sports.html">Sports</a>
+      <a href="entertainment.html">Entertainment</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business News</h1>
+
+    <section>
+      <h2>Business Section</h2>
+
+      <article>
+        <h2>Tech Giant Announces Groundbreaking AI Technology</h2>
+        <img src="https://example.com/tech-ai.jpg" alt="AI Technology">
+        <p>One of the world's largest tech companies has revealed a new AI-driven software that is set to revolutionize industries across the globe...</p>
+        <div class="more-content">
+          <p>This AI platform offers unprecedented capabilities in automation, data processing, and predictive analytics. Experts believe it could lead to a new era of efficiency in sectors such as finance, healthcare, and manufacturing. The company has already secured major contracts with leading firms.</p>
+          <p>Investors have responded positively to the news, and the company’s stock has seen a significant rise following the announcement.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+
+      <article>
+        <h2>Global Markets Rebound After Economic Turmoil</h2>
+        <img src="https://example.com/market-rebound.jpg" alt="Market Rebound">
+        <p>Following a period of uncertainty, global markets are seeing a resurgence, with key indices posting gains across major economies...</p>
+        <div class="more-content">
+          <p>Economic experts credit government stimulus packages and renewed consumer confidence for the recovery. Industries hardest hit by the pandemic, such as travel and retail, are showing signs of growth. Analysts suggest that while challenges remain, the outlook is more positive moving into the next fiscal year.</p>
+          <p>Investors are optimistic as the recovery gains momentum, and stock markets continue to react favorably.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+
+      <article>
+        <h2>Cryptocurrency Boom: Bitcoin Reaches New Heights</h2>
+        <img src="https://example.com/bitcoin-boom.jpg" alt="Cryptocurrency">
+        <p>Bitcoin has reached an all-time high, fueling discussions about the future of cryptocurrency and decentralized finance...</p>
+        <div class="more-content">
+          <p>As institutional investors pour into the market, cryptocurrencies like Bitcoin are experiencing unprecedented growth. Financial experts are divided on whether this marks a sustainable future for crypto or if it's another bubble waiting to burst.</p>
+          <p>Regardless, the market is buzzing, and more businesses are adopting crypto as a legitimate payment method, signaling its growing mainstream acceptance.</p>
+        </div>
+        <a onclick="toggleReadMore(this)">Read More</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 News Website</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(button) {
+      const moreContent = button.previousElementSibling;
+      if (moreContent.style.display === "none" || moreContent.style.display === "") {
+        moreContent.style.display = "block";
+        button.textContent = "Read Less";
+      } else {
+        moreContent.style.display = "none";
+        button.textContent = "Read More";
+      }
+    }
+  </script>
+</body>
+</html>
